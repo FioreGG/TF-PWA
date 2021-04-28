@@ -1,0 +1,66 @@
+
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+						<!-- Logo -->
+						<h1 id="logo"><a href="/">MENÚ</a></h1>
+					</div>
+                </div>
+			<!-- Promo -->
+				<div id="promo-wrapper">
+
+                   
+                <div class="row" style="display:flex; justify-content:center; align-content:center">                
+
+                         <div class="col-sm-6" style="display:flex; align-content:center; justify-content:center" >
+                            <section >
+                                <h2>Modificar usuario en el sistema</h2> 
+                                {{#each usuario}}
+								<form method="POST" action="/usuarios/update/{{id}}" style="margin-top:30px">
+									<div >
+										<div >
+                                            <label for="user" style="margin-top: 20px;">Nombre de usuario</label>
+											<input name="user" placeholder="Nombre de usuario" type="text"  value="{{user}}"/>
+										</div>
+										<div>
+                                            <label for="pass" style="margin-top: 20px;">Password</label>
+											<input name="pass" placeholder="Password" type="text"  value="{{pass}}"/>
+										</div>
+										<div>
+                                            <label for="admin" style="margin-top: 20px;">Administrador</label>
+											<input name="admin" placeholder="Administrador" type="text"  value="{{admin}}"/>
+										</div>
+										<div >
+											<ul class="actions">
+												<li><input type="submit"  value="Actualizar" style="margin-top:20px" /></li>
+												
+											</ul>
+										</div>
+									</div>
+                                </form>
+                                {{/each}}
+					        </section>
+                        </div>
+                    </div>
+                </div>
+         
+			<!-- Footer -->
+				<div >
+						<div class="col">
+								<div style="display: flex; justify-content:center">
+									<img class="imagen-logo" src="/images/logo2.png" alt="">	
+									<p style="font-size:25px; padding-top: 70px; margin:0px"><b>Desde hace 26 años acompañando <br> a nuestra gente <br> y creciendo juntos. </b></p>
+								</div>												
+						</div>
+		        </div>
+   
+
+			<!-- Scripts -->
+			<script src="/javascripts/jquery.min.js"></script>
+			<script src="/javascripts/jquery.dropotron.min.js"></script>
+			<script src="/javascripts/browser.min.js"></script>
+			<script src="/javascripts/breakpoints.min.js"></script>
+			<script src="/javascripts/util.js"></script>
+			<script src="/javascripts/main.js"></script>
